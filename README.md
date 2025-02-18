@@ -1,34 +1,20 @@
-# discord-bot
+# Discord Bot Project
 
-This is a simple Discord bot that responds to a slash command to check if the bot is online.
+## Introduction
+This project is a Discord bot to get quick information from your linked **Meldkamer**.
 
-## Setup
+## Features
+- Register server
+- Check subscription state/date
+- Get automated updates of application updates
 
-1. Clone the repository:
-    ```sh
-    git clone <repository-url>
-    cd discord-bot
+## Configuration for coding
+1. Create a `.env` file in the root directory and add your bot token:
+    ```env
+    DISCORD_BOT_TOKEN=your_bot_token_here
+    SERVER_GUILD_ID=your_server_token_here
     ```
-
-2. Create a virtual environment and activate it:
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. Install the required dependencies:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-4. Create a [.env](http://_vscodecontentref_/1) file in the root directory and add your Discord bot token and server guild ID:
-    
-```env    DISCORD_BOT_TOKEN="your-bot-token"
-    SERVER_GUILD_ID="your-server-guild-id"
-    ```
-
-## Running the Bot
-
-To run the bot, use the following command:
-```sh
+## Usage
+Run the bot using the following command:
+```bash
 python bot.py
